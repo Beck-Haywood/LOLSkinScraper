@@ -15,6 +15,5 @@
 vendor/
 .vscode/
 
-LOLSkinScraper
-
-output.json
+# Ignore the executable
+./LOLSkinScraper
