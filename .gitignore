@@ -16,4 +16,13 @@ vendor/
 .vscode/
 
 # Ignore the executable
-./LOLSkinScraper
+LOLSkinScraper
+
+# Ignore all
+*
+
+# Unignore all with extensions
+!*.*
+
+# Unignore all dirs
+!*/
