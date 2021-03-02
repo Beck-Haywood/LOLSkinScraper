@@ -7,7 +7,7 @@ import (
 	"strings"
 	"regexp"
 	"encoding/json"
-	"os"
+	// "os"
 )
 
 type Characters struct {
@@ -21,6 +21,17 @@ type Skin struct {
 	Name string `json: "name"`
 	Cost string `json: "cost"`
 	Date string `json: "date"`
+}
+
+func main() {
+	charStruc := linkScrape()
+
+	b, err := json.Marshal(charStruc)
+	if err != nil {
+		fmt.Println("error:", err)
+	}
+	// os.Stdout.Write(b)
+	_ = ioutil.WriteFile("output.json", b, 0644)
 }
 
 // scrapes all of the links for each champion
@@ -48,6 +59,10 @@ func linkScrape() Characters{
 	go worker(links, result)
 	go worker(links, result)
 	go worker(links, result)
+	go worker(links, result)
+	go worker(links, result)
+	go worker(links, result)
+	go worker(links, result)
 
 	close(links)
 
@@ -66,27 +81,6 @@ func linkScrape() Characters{
 	return characters
 }
 
-// writes a .json file that holds the json of the articles
-func writeJSONFile(json []byte) {
-	err := ioutil.WriteFile("output.json", json, 0644)
-	if err != nil {
-		panic(err)
-	}
-}
-
-func main() {
-	charStruc := linkScrape()
-	b, err := json.Marshal(charStruc)
-	if err != nil {
-		fmt.Println("error:", err)
-	}
-	os.Stdout.Write(b)
-	_ = ioutil.WriteFile("output.json", b, 0644)
-	
-	// Test ChampScrape Works
-	// champScrape("https://leagueoflegends.fandom.com/wiki/Azir/LoL/Cosmetics")
-}
-
 // worker gorountine function that scrapes each website concurrently
 func worker(links chan string, result chan Character) {
 	for link := range links {
@@ -94,23 +88,8 @@ func worker(links chan string, result chan Character) {
 	}
 }
 
-func champScrape2(link string) string{
-	var name string
-	fmt.Println(link)
-	c := colly.NewCollector()
-	c.OnHTML(".skin-icon+ div div:nth-child(1)", func(e *colly.HTMLElement) {
-			name = strings.Replace(e.Text, " View in 3D", "", 1)
-	})
-	c.Visit(link)
-	// fmt.Println(name)
-	return name
-
-}
-
 func champScrape(link string) Character {
 	fmt.Println(link)
-
-	// var champMap map[string][]Skin
 
 	var names []string
 	var costs []string
