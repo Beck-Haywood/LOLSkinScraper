@@ -6,28 +6,33 @@ import (
 	"github.com/gocolly/colly"
 	"strings"
 	"regexp"
+	"encoding/json"
+	"os"
 )
+
+type Characters struct {
+	CharacterMap map[string]Character `json: "Character"`
+}
+type Character struct {
+	Name string  `json: "name"`
+	Skins []Skin `json: "skins"`
+}
 type Skin struct {
 	Name string `json: "name"`
 	Cost string `json: "cost"`
-Date string `json: "date"`
+	Date string `json: "date"`
 }
 
-type SkinsStruct struct {
-	Skins []Skin
-}
-
-type ListofSkinsStruct struct {
-	ListofChampionSkins []SkinsStruct
-}
 // scrapes all of the links for each champion
-func linkScrape() {
+func linkScrape() Characters{
 	c := colly.NewCollector()
+	var characters Characters
+	characters.CharacterMap = make(map[string]Character) 
 
 	var numOfLinks int
     linkSelector := ".label-only a"
 	links := make(chan string, 180)
-	result := make(chan  map[string][]Skin, 1)
+	result := make(chan Character, 1)
 
 	c.OnHTML(linkSelector, func(e *colly.HTMLElement) {
         // fmt.Println(e.Text)
@@ -48,7 +53,9 @@ func linkScrape() {
 
 	for i := 0; i < numOfLinks; i++ {
 		struc := <- result
-		fmt.Println("map:", struc)
+		
+		
+		characters.CharacterMap[struc.Name] = struc
 	}
 
 	// Marshal map to json
@@ -56,7 +63,7 @@ func linkScrape() {
 	// Two choices 1. Add json to json then write to file
 	// create struct and add maps together
 
-	return
+	return characters
 }
 
 // writes a .json file that holds the json of the articles
@@ -68,13 +75,20 @@ func writeJSONFile(json []byte) {
 }
 
 func main() {
-	linkScrape()
+	charStruc := linkScrape()
+	b, err := json.Marshal(charStruc)
+	if err != nil {
+		fmt.Println("error:", err)
+	}
+	os.Stdout.Write(b)
+	_ = ioutil.WriteFile("output.json", b, 0644)
+	
 	// Test ChampScrape Works
 	// champScrape("https://leagueoflegends.fandom.com/wiki/Azir/LoL/Cosmetics")
 }
 
 // worker gorountine function that scrapes each website concurrently
-func worker(links chan string, result chan map[string][]Skin) {
+func worker(links chan string, result chan Character) {
 	for link := range links {
 		result <- champScrape(link)
 	}
@@ -93,9 +107,10 @@ func champScrape2(link string) string{
 
 }
 
-func champScrape(link string) map[string][]Skin {
+func champScrape(link string) Character {
 	fmt.Println(link)
-	var champMap map[string][]Skin
+
+	// var champMap map[string][]Skin
 
 	var names []string
 	var costs []string
@@ -150,12 +165,10 @@ func champScrape(link string) map[string][]Skin {
 		// fmt.Println(name, costs[i], dates[i])
 	}
 	// listOfChampSkins.ListofChampionSkins = append(listOfChampSkins.ListofChampionSkins, skinsStruct) // Append champion skins to listOfChampSkins struct
-	champMap = make(map[string][]Skin)
-	champMap[name] = skins
-	return champMap
+	var char Character
+	char.Name = name 
+	char.Skins = skins
+	
+	return char
 
-}
-func (skins *SkinsStruct) AddItem(skin Skin) []Skin {
-	skins.Skins = append(skins.Skins, skin)
-	return skins.Skins
 }
