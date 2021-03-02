@@ -26,3 +26,6 @@ LOLSkinScraper
 
 # Unignore all dirs
 !*/
+
+# DS store
+.DS_Store
