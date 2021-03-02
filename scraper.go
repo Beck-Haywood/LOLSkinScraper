@@ -26,7 +26,7 @@ type Skin struct {
 func main() {
 	charStruc := linkScrape()
 
-	b, err := json.Marshal(charStruc)
+	b, err := json.MarshalIndent(charStruc, "", "    ")
 	if err != nil {
 		fmt.Println("error:", err)
 	}
