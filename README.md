@@ -1,5 +1,5 @@
 # 🕷 LOLSkinScraper
-![alt text](https://github.com/Beck-Haywood/LoLChampionApi/blob/master/json.png?raw=true)
+![alt text](https://github.com/Beck-Haywood/LOLSkinScraper/blob/master/json.png?raw=true)
 
 ### Proposal
 
