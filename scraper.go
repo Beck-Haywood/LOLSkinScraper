@@ -90,7 +90,6 @@ func worker(links chan string, result chan Character) {
 
 func champScrape(link string) Character {
 	fmt.Println(link)
-
 	var names []string
 	var costs []string
 	var dates []string

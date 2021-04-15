@@ -694,6 +694,11 @@
                     "Date": "16-Nov-2017"
                 },
                 {
+                    "Name": "Space Groove Blitz \u0026 Crank",
+                    "Cost": "1820",
+                    "Date": "01-Apr-2021"
+                },
+                {
                     "Name": "Goalkeeper Blitzcrank",
                     "Cost": "520",
                     "Date": "24-Jun-2010"
@@ -857,6 +862,11 @@
                     "Name": "Arcade Caitlyn",
                     "Cost": "1350",
                     "Date": "28-Jun-2019"
+                },
+                {
+                    "Name": "Battle Academia Caitlyn",
+                    "Cost": "1820",
+                    "Date": "18-Mar-2021"
                 },
                 {
                     "Name": "Sheriff Caitlyn",
@@ -1714,6 +1724,11 @@
                     "Date": "05-Sep-2019"
                 },
                 {
+                    "Name": "Dragon Guardian Galio",
+                    "Cost": "1350",
+                    "Date": "15-Apr-2021"
+                },
+                {
                     "Name": "Hextech Galio",
                     "Cost": "520",
                     "Date": "10-Aug-2010"
@@ -1827,6 +1842,11 @@
                     "Name": "Mecha Kingdoms Garen",
                     "Cost": "1350",
                     "Date": "15-Jan-2020"
+                },
+                {
+                    "Name": "Battle Academia Garen",
+                    "Cost": "1350",
+                    "Date": "18-Mar-2021"
                 },
                 {
                     "Name": "Sanguine Garen",
@@ -2017,6 +2037,21 @@
                     "Name": "Victorious Graves",
                     "Cost": "Special pricing",
                     "Date": "08-Nov-2017"
+                }
+            ]
+        },
+        "Gwen": {
+            "Name": "Gwen",
+            "Skins": [
+                {
+                    "Name": "Original Gwen",
+                    "Cost": "975",
+                    "Date": "15-Apr-2021"
+                },
+                {
+                    "Name": "Space Groove Gwen",
+                    "Cost": "1350",
+                    "Date": "15-Apr-2021"
                 }
             ]
         },
@@ -2422,6 +2457,16 @@
                     "Name": "PAX Jax",
                     "Cost": "Special pricing",
                     "Date": "26-Mar-2010"
+                },
+                {
+                    "Name": "Conqueror Jax Prestige Edition",
+                    "Cost": "Special pricing",
+                    "Date": "15-Apr-2021"
+                },
+                {
+                    "Name": "Conqueror Jax",
+                    "Cost": "1350",
+                    "Date": "15-Apr-2021"
                 }
             ]
         },
@@ -2502,6 +2547,11 @@
                     "Name": "SKT T1 Jhin",
                     "Cost": "1350",
                     "Date": "27-Jun-2017"
+                },
+                {
+                    "Name": "DWG Jhin",
+                    "Cost": "1350",
+                    "Date": "15-Apr-2021"
                 }
             ]
         },
@@ -2899,6 +2949,11 @@
                     "Date": "17-Sep-2020"
                 },
                 {
+                    "Name": "Dragonslayer Kayle",
+                    "Cost": "1350",
+                    "Date": "15-Apr-2021"
+                },
+                {
                     "Name": "Transcended Kayle",
                     "Cost": "975",
                     "Date": "13-Jul-2010"
@@ -2987,6 +3042,11 @@
                     "Name": "Swamp Master Kennen",
                     "Cost": "520",
                     "Date": "08-Apr-2010"
+                },
+                {
+                    "Name": "DWG Kennen",
+                    "Cost": "1350",
+                    "Date": "15-Apr-2021"
                 }
             ]
         },
@@ -3119,6 +3179,11 @@
                     "Date": "09-Jul-2020"
                 },
                 {
+                    "Name": "Bee'Maw",
+                    "Cost": "1350",
+                    "Date": "04-Mar-2021"
+                },
+                {
                     "Name": "Caterpillar Kog'Maw",
                     "Cost": "520",
                     "Date": "24-Jun-2010"
@@ -3142,11 +3207,6 @@
                     "Name": "Hextech Kog'Maw",
                     "Cost": "Special pricing",
                     "Date": "07-Dec-2017"
-                },
-                {
-                    "Name": "Bee'Maw",
-                    "Cost": "1350",
-                    "Date": "A"
                 }
             ]
         },
@@ -3329,9 +3389,24 @@
                     "Date": "15-Jan-2020"
                 },
                 {
+                    "Name": "Battle Academia Leona",
+                    "Cost": "1350",
+                    "Date": "18-Mar-2021"
+                },
+                {
                     "Name": "Defender Leona",
                     "Cost": "750",
                     "Date": "13-Jul-2011"
+                },
+                {
+                    "Name": "Battle Academia Leona Prestige Edition",
+                    "Cost": "Special pricing",
+                    "Date": "18-Mar-2021"
+                },
+                {
+                    "Name": "DWG Leona",
+                    "Cost": "1350",
+                    "Date": "15-Apr-2021"
                 }
             ]
         },
@@ -3479,6 +3554,11 @@
                     "Date": "21-Nov-2018"
                 },
                 {
+                    "Name": "Space Groove Lulu",
+                    "Cost": "1350",
+                    "Date": "01-Apr-2021"
+                },
+                {
                     "Name": "Bittersweet Lulu",
                     "Cost": "975",
                     "Date": "20-Mar-2012"
@@ -3487,6 +3567,11 @@
                     "Name": "Winter Wonder Lulu",
                     "Cost": "1350",
                     "Date": "19-Dec-2013"
+                },
+                {
+                    "Name": "Space Groove Lulu Prestige Edition",
+                    "Cost": "Special pricing",
+                    "Date": "01-Apr-2021"
                 }
             ]
         },
@@ -3547,6 +3632,11 @@
                     "Name": "Cosmic Lux",
                     "Cost": "1820",
                     "Date": "26-Mar-2020"
+                },
+                {
+                    "Name": "Space Groove Lux",
+                    "Cost": "1350",
+                    "Date": "01-Apr-2021"
                 },
                 {
                     "Name": "Imperial Lux",
@@ -3664,6 +3754,11 @@
                     "Date": "09-Apr-2020"
                 },
                 {
+                    "Name": "Beezahar",
+                    "Cost": "1350",
+                    "Date": "04-Mar-2021"
+                },
+                {
                     "Name": "Vizier Malzahar",
                     "Cost": "520",
                     "Date": "01-Jun-2010"
@@ -3677,11 +3772,6 @@
                     "Name": "Hextech Malzahar",
                     "Cost": "Special pricing",
                     "Date": "18-Oct-2018"
-                },
-                {
-                    "Name": "Beezahar",
-                    "Cost": "1350",
-                    "Date": "A"
                 }
             ]
         },
@@ -4079,6 +4169,11 @@
                     "Date": "12-Nov-2020"
                 },
                 {
+                    "Name": "Space Groove Nasus",
+                    "Cost": "1350",
+                    "Date": "01-Apr-2021"
+                },
+                {
                     "Name": "Riot K-9 Nasus",
                     "Cost": "975",
                     "Date": "16-Aug-2011"
@@ -4227,6 +4322,11 @@
                     "Name": "Challenger Nidalee",
                     "Cost": "975",
                     "Date": "14-Jan-2016"
+                },
+                {
+                    "Name": "DWG Nidalee",
+                    "Cost": "1350",
+                    "Date": "15-Apr-2021"
                 }
             ]
         },
@@ -4307,6 +4407,11 @@
                     "Name": "Papercraft Nunu \u0026 Willump",
                     "Cost": "1350",
                     "Date": "21-Feb-2019"
+                },
+                {
+                    "Name": "Space Groove Nunu \u0026 Willump",
+                    "Cost": "1350",
+                    "Date": "01-Apr-2021"
                 },
                 {
                     "Name": "Sasquatch Nunu \u0026 Willump",
@@ -4999,6 +5104,11 @@
                     "Date": "11-Apr-2018"
                 },
                 {
+                    "Name": "Space Groove Rumble",
+                    "Cost": "1350",
+                    "Date": "01-Apr-2021"
+                },
+                {
                     "Name": "Bilgerat Rumble",
                     "Cost": "520",
                     "Date": "26-Apr-2011"
@@ -5087,6 +5197,11 @@
                     "Name": "PsyOps Samira",
                     "Cost": "1350",
                     "Date": "21-Sep-2020"
+                },
+                {
+                    "Name": "Space Groove Samira",
+                    "Cost": "1350",
+                    "Date": "01-Apr-2021"
                 }
             ]
         },
@@ -5167,6 +5282,31 @@
                     "Name": "True Damage Senna Prestige Edition",
                     "Cost": "Special pricing",
                     "Date": "04-Feb-2020"
+                }
+            ]
+        },
+        "Seraphine": {
+            "Name": "Seraphine",
+            "Skins": [
+                {
+                    "Name": "Original Seraphine",
+                    "Cost": "975",
+                    "Date": "29-Oct-2020"
+                },
+                {
+                    "Name": "K/DA ALL OUT Seraphine Indie",
+                    "Cost": "3250",
+                    "Date": "29-Oct-2020"
+                },
+                {
+                    "Name": "K/DA ALL OUT Seraphine Rising Star",
+                    "Cost": "Special pricing",
+                    "Date": "29-Oct-2020"
+                },
+                {
+                    "Name": "K/DA ALL OUT Seraphine Superstar",
+                    "Cost": "Special pricing",
+                    "Date": "29-Oct-2020"
                 }
             ]
         },
@@ -5444,6 +5584,11 @@
                     "Date": "09-Apr-2020"
                 },
                 {
+                    "Name": "Blackfrost Sion",
+                    "Cost": "1350",
+                    "Date": "15-Apr-2021"
+                },
+                {
                     "Name": "Hextech Sion",
                     "Cost": "520",
                     "Date": "01-Jun-2010"
@@ -5682,31 +5827,6 @@
                     "Name": "Star Guardian Soraka Prestige Edition",
                     "Cost": "Special pricing",
                     "Date": "24-Nov-2020"
-                }
-            ]
-        },
-        "Superstar": {
-            "Name": "Superstar",
-            "Skins": [
-                {
-                    "Name": "Original Seraphine",
-                    "Cost": "975",
-                    "Date": "29-Oct-2020"
-                },
-                {
-                    "Name": "K/DA ALL OUT Seraphine Indie",
-                    "Cost": "3250",
-                    "Date": "29-Oct-2020"
-                },
-                {
-                    "Name": "K/DA ALL OUT Seraphine Rising Star",
-                    "Cost": "Special pricing",
-                    "Date": "29-Oct-2020"
-                },
-                {
-                    "Name": "K/DA ALL OUT Seraphine Superstar",
-                    "Cost": "Special pricing",
-                    "Date": "29-Oct-2020"
                 }
             ]
         },
@@ -6317,6 +6437,11 @@
                     "Name": "PAX Twisted Fate",
                     "Cost": "Special pricing",
                     "Date": "03-Sep-2009"
+                },
+                {
+                    "Name": "DWG Twisted Fate",
+                    "Cost": "1350",
+                    "Date": "15-Apr-2021"
                 }
             ]
         },
@@ -6347,6 +6472,11 @@
                     "Name": "Twitch Shadowfoot",
                     "Cost": "1350",
                     "Date": "19-Mar-2020"
+                },
+                {
+                    "Name": "Dragonslayer Twitch",
+                    "Cost": "1350",
+                    "Date": "15-Apr-2021"
                 },
                 {
                     "Name": "Kingpin Twitch",
@@ -6667,6 +6797,11 @@
                     "Name": "Infernal Vel'Koz",
                     "Cost": "1350",
                     "Date": "16-Jul-2020"
+                },
+                {
+                    "Name": "Blackfrost Vel'Koz",
+                    "Cost": "1350",
+                    "Date": "15-Apr-2021"
                 }
             ]
         },
@@ -6969,6 +7104,11 @@
                     "Date": "04-Apr-2018"
                 },
                 {
+                    "Name": "Battle Academia Wukong",
+                    "Cost": "1350",
+                    "Date": "18-Mar-2021"
+                },
+                {
                     "Name": "Underworld Wukong",
                     "Cost": "1350",
                     "Date": "28-Oct-2014"
@@ -7167,6 +7307,11 @@
                     "Name": "Spirit Blossom Yone",
                     "Cost": "1350",
                     "Date": "06-Aug-2020"
+                },
+                {
+                    "Name": "Battle Academia Yone",
+                    "Cost": "1350",
+                    "Date": "18-Mar-2021"
                 }
             ]
         },
@@ -7219,14 +7364,14 @@
                     "Date": "14-May-2019"
                 },
                 {
+                    "Name": "Yuubee",
+                    "Cost": "1350",
+                    "Date": "04-Mar-2021"
+                },
+                {
                     "Name": "Heartseeker Yuumi",
                     "Cost": "1350",
                     "Date": "04-Feb-2020"
-                },
-                {
-                    "Name": "Yuubee",
-                    "Cost": "1350",
-                    "Date": "A"
                 }
             ]
         },
